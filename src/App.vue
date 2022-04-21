@@ -1,6 +1,6 @@
 <template>
-  <div class="objdect"></div>
-  <NavBar msg="Welcome to Your Vue.js App" />
+  <div class="object"></div>
+  <NavBar />
   <HeroSection />
   <ProjectsSection />
 </template>
@@ -26,11 +26,19 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  z-index: 1;
 }
 .object {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
+  transform-origin: 0 0;
+  transform: translate(-100%, 50%) rotate(45deg) translate(100%, -50%);
   background: red;
   border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  z-index: -9999;
 }
 </style>

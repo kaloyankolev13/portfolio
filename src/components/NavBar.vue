@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-light" style="background-color: #8c0b02">
-    <div class="container">
+    <div class="container h-20">
       <a class="navbar-brand" href="#">
         <img
           src="/docs/5.1/assets/brand/bootstrap-logo.svg"
