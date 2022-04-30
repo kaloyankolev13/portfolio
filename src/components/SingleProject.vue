@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div v-if="showModal">
+      <ProjectModal :project="project" />
+    </div>
     <div class="card-body py-4">
       <h4 class="card-title text-left">{{ project.name }}</h4>
       <p class="lead card-subtitle">ADD SOMETHING</p>
@@ -8,15 +11,18 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
         voluptatem!
       </p>
-      <a href="" class="btn btn-outline-primary btn-lg mt-3 text-center">
+      <button
+        @click="openModal"
+        class="btn btn-outline-primary btn-lg mt-3 text-center"
+      >
         Read More
-      </a>
+      </button>
     </div>
   </div>
-  <ProjectModal :project="project" />
 </template>
 
 <script>
+import { ref } from "@vue/reactivity";
 import ProjectModal from "./ProjectModal.vue";
 export default {
   props: ["project"],
@@ -25,6 +31,11 @@ export default {
   },
   setup(props) {
     console.log(props.project);
+    let showModal = ref(false);
+    const openModal = () => {
+      showModal.value = true;
+    };
+    return { showModal, openModal };
   },
 };
 </script>

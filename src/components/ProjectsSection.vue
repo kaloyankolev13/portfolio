@@ -33,6 +33,11 @@ export default {
         description: "Once upon a time 1",
         image: require("../assets/img/Pants_Pullover_1.jpg"),
       },
+      {
+        id: 2,
+        name: "project 2",
+        description: "Once upon a time 2",
+      },
     ]);
     return { projects };
   },
