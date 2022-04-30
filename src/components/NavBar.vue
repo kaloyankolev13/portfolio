@@ -26,9 +26,6 @@
       >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#topics">About Me</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
@@ -52,6 +49,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 768px) {
+  .nav-item {
+    border-bottom: 1px solid black;
+  }
+}
 .navbar-toggler {
   border: none;
   outline: none;

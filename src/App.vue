@@ -1,5 +1,5 @@
 <template>
-  <div class="object"></div>
+  <div></div>
   <NavBar />
   <HeroSection />
   <ProjectsSection />

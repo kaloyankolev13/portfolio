@@ -9,7 +9,7 @@
         <div
           v-for="project in projects"
           :key="project.id"
-          class="card m-3 col-8 col-lg-4 col-xl-3"
+          class="card border-0 m-3 col-8 col-lg-4 col-xl-3"
         >
           <SingleProject :project="project" />
         </div>
@@ -31,11 +31,7 @@ export default {
         id: 1,
         name: "project 1",
         description: "Once upon a time 1",
-      },
-      {
-        id: 2,
-        name: "project 2",
-        description: "Once upon a time 2",
+        image: require("../assets/img/Pants_Pullover_1.jpg"),
       },
     ]);
     return { projects };
