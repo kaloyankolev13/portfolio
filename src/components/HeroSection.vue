@@ -3,11 +3,7 @@
     <div class="row">
       <div class="col">
         <h1 class="display-1 text-left">Front-End Developer</h1>
-        <p class="col-sm-12">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
-          dicta doloremque mollitia sunt voluptas quibusdam odio, est impedit
-          voluptatibus nisi.
-        </p>
+        <p class="col-sm-12">Hello , my name is Kaloyan Kolev</p>
       </div>
     </div>
     <div class="accordion" id="accordionExample">
@@ -21,7 +17,7 @@
             aria-expanded="true"
             aria-controls="collapseOne"
           >
-            Accordion Item #1
+            Little About Me
           </button>
         </h2>
         <div
@@ -31,14 +27,11 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is
-            shown by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            I am a multimedia design student and an aspiring developer with keen
+            interest in technology, searching for a job ,so that I can practise
+            and improve my skills I have acquired so far. Past experiences
+            helped me achieve creative thinking and a growth mindset with
+            organisational , analytical and problem-solving skills .
           </div>
         </div>
       </div>
@@ -52,7 +45,7 @@
             aria-expanded="false"
             aria-controls="collapseTwo"
           >
-            Accordion Item #2
+            More
           </button>
         </h2>
         <div
@@ -61,59 +54,48 @@
           aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample"
         >
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            Accordion Item #3
-          </button>
-        </h2>
-        <div
-          id="collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingThree"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
-          </div>
+          <div class="accordion-body">Skills:</div>
+          <br />
+          <ul>
+            <div class="row">
+              <div class="col-6">
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </div>
+              <div class="col-6">
+                <li>Sass</li>
+                <li>Node.js</li>
+                <li>Vue.js</li>
+              </div>
+            </div>
+          </ul>
         </div>
       </div>
     </div>
   </main>
 </template>
+<style>
+</style>
 
 <script>
 export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/style.scss";
+
 .container {
   padding: 200px 0 500px 0;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+  color: $primary-color;
+  background: none;
+  box-shadow: none;
+}
+.x-accordion-heading .x-accordion-toggle.collapsed {
+  background-color: transparent;
 }
 </style>

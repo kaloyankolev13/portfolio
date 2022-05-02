@@ -1,9 +1,9 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-light pt-4">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top pt-4">
     <div class="container-xxl">
       <!-- navbar brand / title -->
-      <a class="navbar-brand" href="#intro">
-        <span class="text-secondary fw-bold"> Kaloyan Kolev </span>
+      <a class="" href="#intro">
+        <img src="../assets/img/logo.svg" height="80" alt="logo" />
       </a>
       <!-- toggle button for mobile nav -->
       <button
@@ -49,6 +49,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/style.scss";
+
 @media (max-width: 768px) {
   .nav-item {
     border-bottom: 1px solid black;

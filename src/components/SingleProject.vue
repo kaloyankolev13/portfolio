@@ -33,7 +33,7 @@ export default {
     console.log(props.project);
     let showModal = ref(false);
     const openModal = () => {
-      showModal.value = true;
+      showModal.value = !showModal.value;
     };
     return { showModal, openModal };
   },
@@ -41,4 +41,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/style.scss";
 </style>
