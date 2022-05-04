@@ -2,8 +2,8 @@
   <main class="container screen">
     <div class="row">
       <div class="col">
-        <h1 class="display-1 text-left">Front-End Developer</h1>
-        <p class="col-sm-12">Hello , my name is Kaloyan Kolev</p>
+        <h1 class="display-1 text-left">Hi , I am Kaloyan Kolev</h1>
+        <p class="col-sm-12">I'm a frontend developer</p>
       </div>
     </div>
     <div class="accordion" id="accordionExample">

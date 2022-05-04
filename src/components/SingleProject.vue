@@ -6,7 +6,6 @@
     <div class="card-body py-4" @click="toggleModal">
       <h4 class="card-title text-left">{{ project.name }}</h4>
       <p class="lead card-subtitle">ADD SOMETHING</p>
-      <img :src="project.image" alt="Picture of project" class="col-12" />
       <p class="card-text mx-5 text-muted d-none d-lg-block text-right">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
         voluptatem!
