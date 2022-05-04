@@ -10,6 +10,10 @@
           v-for="project in projects"
           :key="project.id"
           class="card border-0 m-3 col-8 col-lg-4 col-xl-3"
+          :style="{
+            backgroundImage: 'url(' + project.image + ')',
+            color: project.color,
+          }"
         >
           <SingleProject :project="project" />
         </div>
@@ -29,13 +33,14 @@ export default {
     let projects = ref([
       {
         id: 1,
-        name: "project 1",
+        name: '"Кубиста"',
         description: "Once upon a time 1",
         image: require("../assets/img/Pants_Pullover_1.jpg"),
+        color: "#ffffff",
       },
       {
         id: 2,
-        name: "project 2",
+        name: '“Trapholt"',
         description: "Once upon a time 2",
       },
     ]);

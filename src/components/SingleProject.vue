@@ -3,20 +3,14 @@
     <div v-if="showModal">
       <ProjectModal :project="project" />
     </div>
-    <div class="card-body py-4">
+    <div class="card-body py-4" @click="toggleModal">
       <h4 class="card-title text-left">{{ project.name }}</h4>
       <p class="lead card-subtitle">ADD SOMETHING</p>
-      <p class="display-5 my-4 text-primary text-center fw-bold">10</p>
+      <img :src="project.image" alt="Picture of project" class="col-12" />
       <p class="card-text mx-5 text-muted d-none d-lg-block text-right">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
         voluptatem!
       </p>
-      <button
-        @click="openModal"
-        class="btn btn-outline-primary btn-lg mt-3 text-center"
-      >
-        Read More
-      </button>
     </div>
   </div>
 </template>
@@ -29,17 +23,21 @@ export default {
   components: {
     ProjectModal,
   },
-  setup(props) {
-    console.log(props.project);
+  setup() {
     let showModal = ref(false);
-    const openModal = () => {
+    const toggleModal = () => {
       showModal.value = !showModal.value;
     };
-    return { showModal, openModal };
+    return { showModal, toggleModal };
   },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../assets/style.scss";
+img {
+  background-size: cover;
+  object-fit: cover;
+  height: 100px;
+}
 </style>
