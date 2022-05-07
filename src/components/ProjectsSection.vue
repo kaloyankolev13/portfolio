@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="bg-light mt-5">
-    <div class="conatiner-lg">
+    <div class="conatiner-lg p-2">
       <div class="text-center pt-5">
         <h2>Projects</h2>
         <p class="lead text-muted">Some of the projects I have done so far</p>

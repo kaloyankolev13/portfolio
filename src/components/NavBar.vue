@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md fixed-top pt-4">
+  <nav class="navbar navbar-dark navbar-expand-md fixed-top p-3">
     <div class="container-xxl">
       <!-- navbar brand / title -->
       <a class="" href="#">
@@ -16,7 +16,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" style="color: #f3f3f3"></span>
       </button>
 
       <!-- navbar links -->
@@ -53,7 +53,7 @@ export default {
 
 @media (max-width: 768px) {
   .nav-item {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #f3f3f3;
   }
 }
 
@@ -64,7 +64,7 @@ a:hover {
   color: $primary-color;
 }
 .navbar-toggler {
-  border: none;
+  border: $primary-color 1px solid;
   outline: none;
 
   &:focus,
