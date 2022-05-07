@@ -6,7 +6,7 @@
     <div class="card-body align-items-center my-5 py-4" @click="toggleModal">
       <h4 class="card-title text-left">{{ project.name }}</h4>
       <p class="lead card-subtitle">{{ project.description }}</p>
-      <p class="lead card-subtitle" style="font-size: 11px">
+      <p class="lead card-subtitle py-1" style="font-size: 11px">
         {{ project.note }}
       </p>
     </div>

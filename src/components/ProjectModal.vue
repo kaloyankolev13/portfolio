@@ -13,17 +13,9 @@
         <div class="col-4">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            saepe natus consectetur laborum nostrum commodi esse officia cumque
-            impedit atque ad est nisi dolorem, ab velit nesciunt repellendus?
-            Est minima tempore quam esse inventore repudiandae reiciendis quia
-            modi, alias aut facere ea cupiditate numquam illo tempora quibusdam
           </p>
         </div>
-        <div class="col-8">
-          Heya Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          rem, porro nihil tempore mollitia voluptatem vitae inventore maiores.
-          Eos, consequuntur.
-        </div>
+        <div class="col-8">Heya Lor</div>
       </div>
     </div>
   </div>

@@ -26,7 +26,7 @@
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
         >
-          <div class="accordion-item m-3">
+          <div class="accordion-item p-3">
             I am a multimedia design student and an aspiring developer with keen
             interest in technology, searching for a job ,so that I can practise
             and improve my skills I have acquired so far. Past experiences
@@ -54,7 +54,7 @@
           aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample"
         >
-          <div class="accordion-item m-3">
+          <div class="accordion-item p-3">
             <h4>Skills:</h4>
             <ul>
               <div class="row my-3">
@@ -115,5 +115,10 @@ export default {};
 button {
   background: rgba(0, 0, 0, 0);
   color: #fff;
+}
+#collapseOne,
+#collapseTwo {
+  background: rgb(104, 12, 7, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
 </style>

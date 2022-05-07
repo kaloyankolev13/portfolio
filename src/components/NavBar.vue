@@ -16,7 +16,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon" style="color: #f3f3f3"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- navbar links -->
@@ -63,6 +63,7 @@ a {
 a:hover {
   color: $primary-color;
 }
+
 .navbar-toggler {
   border: $primary-color 1px solid;
   outline: none;
