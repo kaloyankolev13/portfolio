@@ -9,7 +9,7 @@
         <div
           v-for="project in projects"
           :key="project.id"
-          class="card border-0 m-3 col-8 col-lg-4 col-xl-3"
+          class="card border-0 m-3 col-8 col-lg-4 col-xl-2"
           :style="{
             backgroundImage: 'url(' + project.image + ')',
             color: project.color,
@@ -34,14 +34,20 @@ export default {
       {
         id: 1,
         name: '"Кубиста"',
-        description: "Once upon a time 1",
+        description: "Clothing Brand",
         image: require("../assets/img/Pants_Pullover_1.jpg"),
         color: "#ffffff",
+        note: "Currently the website is not online ,and I cannot show the code since it contains sensitive information",
       },
       {
         id: 2,
         name: '“Trapholt"',
-        description: "Once upon a time 2",
+        description: "Art Museum",
+      },
+      {
+        id: 3,
+        name: "The Doors",
+        description: "Tribute Page",
       },
     ]);
     return { projects };
@@ -51,4 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style.scss";
+.card {
+  height: 200px;
+}
 </style>

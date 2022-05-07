@@ -3,6 +3,7 @@
     <NavBar />
     <HeroSection />
     <ProjectsSection />
+    <FooterVue />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import NavBar from "./components/NavBar.vue";
 import HeroSection from "./components/HeroSection.vue";
 import ProjectsSection from "./components/ProjectsSection.vue";
+import FooterVue from "./components/FooterVue.vue";
 
 export default {
   name: "App",
@@ -17,6 +19,7 @@ export default {
     NavBar,
     HeroSection,
     ProjectsSection,
+    FooterVue,
   },
 };
 </script>
@@ -32,4 +35,12 @@ export default {
 // // .bg {
 // //   background-color: #333;
 // // }
+
+.bg {
+  background: url(./assets/img/portfolio-bg.png);
+  background-size: cover;
+}
+a {
+  color: #fff;
+}
 </style>

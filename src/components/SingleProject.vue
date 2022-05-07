@@ -3,12 +3,11 @@
     <div v-if="showModal">
       <ProjectModal :project="project" />
     </div>
-    <div class="card-body py-4" @click="toggleModal">
+    <div class="card-body align-items-center my-5 py-4" @click="toggleModal">
       <h4 class="card-title text-left">{{ project.name }}</h4>
-      <p class="lead card-subtitle">ADD SOMETHING</p>
-      <p class="card-text mx-5 text-muted d-none d-lg-block text-right">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
-        voluptatem!
+      <p class="lead card-subtitle">{{ project.description }}</p>
+      <p class="lead card-subtitle" style="font-size: 11px">
+        {{ project.note }}
       </p>
     </div>
   </div>

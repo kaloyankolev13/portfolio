@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-light fixed-top pt-4">
+  <nav class="navbar navbar-expand-md fixed-top pt-4">
     <div class="container-xxl">
       <!-- navbar brand / title -->
-      <a class="" href="#intro">
+      <a class="" href="#">
         <img src="../assets/img/logo.svg" height="80" alt="logo" />
       </a>
       <!-- toggle button for mobile nav -->
@@ -55,6 +55,13 @@ export default {
   .nav-item {
     border-bottom: 1px solid black;
   }
+}
+
+a {
+  color: #fff;
+}
+a:hover {
+  color: $primary-color;
 }
 .navbar-toggler {
   border: none;
