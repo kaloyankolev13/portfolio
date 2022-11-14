@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-dark navbar-expand-md fixed-top p-3">
+  <nav id="home" class="navbar navbar-dark navbar-expand-md fixed-top p-3">
     <div class="container-xxl">
       <!-- navbar brand / title -->
-      <a class="" href="#">
+      <a class="" href="#home">
         <img src="../assets/img/logo.svg" height="80" alt="logo" />
       </a>
       <!-- toggle button for mobile nav -->

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container" @click="$emit('close')">
       <div class="row">
         <div class="col-8">
           <img :src="project.image" alt="Picture of project" class="col-12" />
@@ -24,9 +24,7 @@
 <script>
 export default {
   props: ["project"],
-  setup(props) {
-    console.log(props.project.image);
-  },
+  setup() {},
 };
 </script>
 
