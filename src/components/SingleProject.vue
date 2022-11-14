@@ -3,7 +3,7 @@
     <ProjectModal :project="project" @close="toggleModal" />
   </div>
   <div id="overlay" class="rounded-1">
-    <div class="card-body align-items-center pt-5" @click="toggleModal">
+    <div class="card-body align-items-center py-5" @click="toggleModal">
       <h4 class="card-title text-left">{{ project.name }}</h4>
       <p class="lead card-subtitle">{{ project.descriptionShort }}</p>
 
