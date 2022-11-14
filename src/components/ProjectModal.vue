@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="container" @click="$emit('close')">
+  <div class="container" @click="$emit('close')">
+    <div>
       <div class="row">
         <div class="col-8">
           <img :src="project.image" alt="Picture of project" class="col-12" />
@@ -8,6 +8,7 @@
         <div class="col-4 d-flex align-items-center justify-content-center">
           <h1>{{ project.name }}</h1>
         </div>
+        <a :href="link">Link</a>
       </div>
       <div class="row">
         <div class="col-4">
@@ -22,9 +23,14 @@
 </template>
 
 <script>
+import { ref } from "@vue/reactivity";
 export default {
   props: ["project"],
-  setup() {},
+  emits: ["close"],
+  setup(props) {
+    let link = ref(props.project.link);
+    return { link };
+  },
 };
 </script>
 

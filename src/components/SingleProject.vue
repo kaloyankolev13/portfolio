@@ -18,6 +18,7 @@ import { ref } from "@vue/reactivity";
 import ProjectModal from "./ProjectModal.vue";
 export default {
   props: ["project"],
+  emits: ["close"],
   components: {
     ProjectModal,
   },

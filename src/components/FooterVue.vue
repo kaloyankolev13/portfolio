@@ -7,25 +7,28 @@
         <section class="mb-4">
           <!-- Facebook -->
           <a
-            class="btn btn-outline-light btn-floating m-1"
+            class="btn btn-outline-light btn-floating m-3"
             href="#!"
             role="button"
-            ><i class="fab fa-facebook-f"></i
+            target="_blank"
+            ><i class="fab fa-facebook"></i
           ></a>
 
           <!-- Linkedin -->
           <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            class="btn btn-outline-light btn-floating m-3"
+            href="https://www.linkedin.com/in/kaloyan-kolev-0ab685b9/"
+            target="_blank"
             role="button"
             ><i class="fab fa-linkedin-in"></i
           ></a>
 
           <!-- Github -->
           <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            class="btn btn-outline-light btn-floating m-3"
+            href="https://github.com/kaloyankolev13"
             role="button"
+            target="_blank"
             ><i class="fab fa-github"></i
           ></a>
         </section>
@@ -52,5 +55,6 @@ export default {};
 }
 a.btn {
   border-radius: 50%;
+  scale: 1.5;
 }
 </style>

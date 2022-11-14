@@ -35,6 +35,11 @@ export default {
 // // .bg {
 // //   background-color: #333;
 // // }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .bg {
   background: url(./assets/img/portfolio-bg.png);
