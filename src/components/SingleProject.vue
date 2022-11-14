@@ -1,12 +1,16 @@
 <template>
   <div>
-    <div v-if="showModal">
+    <div v-show="showModal">
       <ProjectModal :project="project" @close="toggleModal" />
     </div>
     <div class="card-body align-items-center my-5 py-4" @click="toggleModal">
       <h4 class="card-title text-left">{{ project.name }}</h4>
       <p class="lead card-subtitle">{{ project.description }}</p>
-      <p class="lead card-subtitle py-1" style="font-size: 11px">
+
+      <p
+        class="lead card-subtitle py-1 note"
+        style="font-size: 11px; color: #fff"
+      >
         {{ project.note }}
       </p>
     </div>
@@ -38,5 +42,8 @@ img {
   background-size: cover;
   object-fit: cover;
   height: 100px;
+}
+.note {
+  background: rgb(104, 12, 7);
 }
 </style>

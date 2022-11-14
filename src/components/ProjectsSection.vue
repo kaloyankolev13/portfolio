@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="bg-light mt-5">
-    <div class="conatiner-lg p-2">
+    <div class="conatiner-md p-2">
       <div class="text-center pt-5">
         <h2>Projects</h2>
         <p class="lead text-muted">Some of the projects I have done so far</p>
@@ -13,6 +13,7 @@
           :style="{
             backgroundImage: 'url(' + project.image + ')',
             color: project.color,
+            objectFit: 'fill',
           }"
         >
           <SingleProject :project="project" />
@@ -33,48 +34,51 @@ export default {
     let projects = ref([
       {
         id: 1,
-        name: '"Кубиста"',
-        description: "Clothing Brand",
-        image: require("../assets/img/Pants_Pullover_1.jpg"),
+        name: "Bulgarian Legacy",
+        description: "Commemorative coins",
+        // image: require("../assets/img/doors.jpg"),
         link: "#",
-        color: "#ffffff",
-        note: "Currently the website is not online ,and I cannot show the code since it contains sensitive information",
+        color: "",
+        backgroundColor: null,
+        note: "Still in development",
       },
       {
         id: 2,
         name: "Trapholt",
         description: "Art Museum",
-        // image: require("../assets/img/Trapholt.jpg"),
+        image: require("../assets/img/trapholt.png"),
         link: "https://github.com/kaloyankolev13/trapholt_dk",
         color: "",
-        note: "",
+        backgroundColor: "#f3f3f3",
       },
       {
         id: 3,
         name: "The Doors",
         description: "Tribute Page",
-        // image: require("../assets/img/Doors.jpg"),
+        image: require("../assets/img/doors.png"),
         link: "#",
-        color: "",
-        note: "",
+        color: "#fff",
+        backgroundColor: "#333",
       },
       {
         id: 4,
         name: "TechhubSyd",
         description: "Programming network",
-        // image: require("../assets/img/Doors.jpg"),
-        link: "#",
-        color: "",
-        note: "",
+        image: require("../assets/img/techhub.png"),
+        link: "https://techhub-exam.web.app/",
+        color: "#fff",
+        backgroundColor: null,
       },
+
       {
         id: 5,
-        name: "Bulgarian Legacy",
-        description: "E-commerce website for a bulgarian company",
-        // image: require("../assets/img/Doors.jpg"),
+        name: '"Кубиста"',
+        description: "Clothing Brand",
+        image: require("../assets/img/Pants_Pullover_1.jpg"),
         link: "#",
-        color: "",
-        note: "",
+        color: "#ffffff",
+        backgroundColor: "#333",
+        note: "Sadly not available anymore",
       },
     ]);
     return { projects };

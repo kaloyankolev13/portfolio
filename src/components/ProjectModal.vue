@@ -1,23 +1,27 @@
 <template>
-  <div class="container" @click="$emit('close')">
-    <div>
-      <div class="row">
-        <div class="col-8">
-          <img :src="project.image" alt="Picture of project" class="col-12" />
-        </div>
-        <div class="col-4 d-flex align-items-center justify-content-center">
-          <h1>{{ project.name }}</h1>
-        </div>
-        <a :href="link">Link</a>
+  <div
+    :style="{ backgroundColor: project.backgroundColor }"
+    class="container my-5 rounded"
+    @click="$emit('close')"
+  >
+    <div class="row p-3">
+      <div class="col-8">
+        <img
+          :src="project.image"
+          alt="Picture of project"
+          class="col-12 rounded-3"
+        />
       </div>
-      <div class="row">
-        <div class="col-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          </p>
-        </div>
-        <div class="col-8">Heya Lor</div>
+      <div class="col-4 d-flex align-items-center justify-content-center">
+        <h1>{{ project.name }}</h1>
       </div>
+      <a :href="link">Link</a>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <p>{{ project.description }}</p>
+      </div>
+      <div class="col-8">Heya Lor</div>
     </div>
   </div>
 </template>
@@ -43,9 +47,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-div {
-  background: #f3f3f3;
-}
+
 img {
   background-size: cover;
   object-fit: cover;
