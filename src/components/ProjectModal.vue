@@ -15,11 +15,12 @@
       <div class="col-4 d-flex align-items-center justify-content-center">
         <h1>{{ project.name }}</h1>
       </div>
-      <a :href="link">Link</a>
+      <a v-if="link" :href="link">Link</a>
+      <p v-else>Link not available</p>
     </div>
     <div class="row">
       <div class="col-4">
-        <p>{{ project.description }}</p>
+        <p>{{ project.descriptionLong }}</p>
       </div>
       <div class="col-8">Heya Lor</div>
     </div>

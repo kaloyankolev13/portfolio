@@ -65,7 +65,8 @@
                 </div>
                 <div class="col-6">
                   <li>Sass</li>
-                  <li>Node.js</li>
+
+                  <li><i class="fa-brands fa-node-js"></i></li>
                   <li>Vue.js</li>
                 </div>
               </div>
@@ -120,5 +121,8 @@ button {
 #collapseTwo {
   background: rgb(104, 12, 7, 0.5);
   border-radius: 20px 20px 0px 0px;
+}
+i {
+  font-size: 1.5rem;
 }
 </style>

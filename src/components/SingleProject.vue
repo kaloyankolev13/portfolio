@@ -1,16 +1,13 @@
 <template>
-  <div>
-    <div v-show="showModal">
-      <ProjectModal :project="project" @close="toggleModal" />
-    </div>
-    <div class="card-body align-items-center my-5 py-4" @click="toggleModal">
+  <div v-show="showModal">
+    <ProjectModal :project="project" @close="toggleModal" />
+  </div>
+  <div id="overlay" class="rounded-1">
+    <div class="card-body align-items-center pt-5" @click="toggleModal">
       <h4 class="card-title text-left">{{ project.name }}</h4>
-      <p class="lead card-subtitle">{{ project.description }}</p>
+      <p class="lead card-subtitle">{{ project.descriptionShort }}</p>
 
-      <p
-        class="lead card-subtitle py-1 note"
-        style="font-size: 11px; color: #fff"
-      >
+      <p class="lead card-subtitle note" style="font-size: 11px; color: #fff">
         {{ project.note }}
       </p>
     </div>
@@ -45,5 +42,17 @@ img {
 }
 .note {
   background: rgb(104, 12, 7);
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+#overlay:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
 </style>

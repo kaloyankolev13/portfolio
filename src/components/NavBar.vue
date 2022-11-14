@@ -32,11 +32,7 @@
             <a class="nav-link" href="#contact">Get in Touch</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://drive.google.com/file/d/1I6iADbooogHI6gTwJU18Oiqemw329hgC/view"
-              >CV</a
-            >
+            <a class="nav-link" href="#contact">CV</a>
           </li>
         </ul>
       </div>

@@ -16,7 +16,7 @@
             objectFit: 'fill',
           }"
         >
-          <SingleProject :project="project" />
+          <SingleProject id="overlay" :project="project" />
         </div>
       </div>
     </div>
@@ -35,9 +35,10 @@ export default {
       {
         id: 1,
         name: "Bulgarian Legacy",
-        description: "Commemorative coins",
+        descriptionShort: "Commemorative coins",
+        descriptionLong: "Commemorative coins",
         image: require("../assets/img/legacy.jpg"),
-        link: "#",
+        link: null,
         color: "#fff",
         backgroundColor: "#000009",
         note: "Currently in development",
@@ -45,36 +46,41 @@ export default {
       {
         id: 2,
         name: "TechhubSyd",
-        description: "Programming network",
+        descriptionShort: "Programming network",
+        descriptionLong: "Programming network",
         image: require("../assets/img/techhub.png"),
         link: "https://techhub-exam.web.app/",
         color: "#fff",
-        backgroundColor: null,
+        backgroundColor: "#104d7c",
       },
       {
         id: 3,
         name: "Trapholt",
-        description: "Art Museum",
+        descriptionShort: "Art Museum",
+        descriptionLong: "Art Museum",
         image: require("../assets/img/trapholt.png"),
         link: "https://github.com/kaloyankolev13/trapholt_dk",
-        color: "",
-        backgroundColor: "#f3f3f3",
+        color: "#fff",
+        backgroundColor: "#0f2043",
       },
       {
         id: 4,
         name: "The Doors",
-        description: "Tribute Page",
+        descriptionShort: "Tribute Page",
+        descriptionLong: "Tribute Page",
         image: require("../assets/img/doors.png"),
-        link: "#",
+        link: "https://github.com/kaloyankolev13/the-doors-tribute-page",
         color: "#fff",
         backgroundColor: "#333",
       },
       {
         id: 5,
         name: '"Кубиста"',
-        description: "Clothing Brand",
+        descriptionShort: "Clothing Brand",
+        descriptionLong:
+          "Clothing Brand, in which I was part of the team after the first version of the website was made. I helped with the development of the website, which was made with Vue.js, Bootstrap, MongoDB,Node.js and Strapi.",
         image: require("../assets/img/Pants_Pullover_1.jpg"),
-        link: "#",
+        link: null,
         color: "#ffffff",
         backgroundColor: "#333",
         note: "Sadly not available anymore",
